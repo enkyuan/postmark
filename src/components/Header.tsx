@@ -13,7 +13,7 @@ export const Header = () => {
 
           <div className="hidden md:block">
             <nav aria-label="Global">
-              <ul className="flex ml-24 justify-center items-center gap-8 text-sm">
+              <ul className="flex justify-center items-center gap-8 text-sm">
                 <li>
                   <a className="text-gray-500 transition hover:text-gray-500/75" href="/about"> About </a>
                 </li>
@@ -36,7 +36,7 @@ export const Header = () => {
           <div className="flex items-center justify-between">
             <div className="sm:flex sm:gap-4">
               <a
-                className="flex rounded-lg bg-blue-600 px-5 py-2.5 gap-2 text-sm font-medium text-white shadow"
+                className="flex rounded-lg bg-blue-600 px-2.5 py-2.5 gap-2 text-sm font-medium text-white shadow"
                 href="/auth"
               >
                 Get Started

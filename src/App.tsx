@@ -1,12 +1,15 @@
 // FIXME: frappe-gantt package may not be working
 
 import Router from './Router';
-import './App.css'
+import { Toaster } from 'sonner'
 
 function App() {
 
   return (
-    <Router />
+    <>
+     <Router />
+     <Toaster />
+    </>
   )
 }
 
