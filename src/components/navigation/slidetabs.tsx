@@ -41,6 +41,9 @@ const TabBar = () => {
       <Link to="/auth/">
         <Tab setPosition={setPosition}>Get Started</Tab>
       </Link>
+      <Link to="https://github.com/enkyuan/postmark">
+        <Tab setPosition={setPosition}>GitHub</Tab>
+      </Link>
 
       <Cursor position={position} />
     </ul>
