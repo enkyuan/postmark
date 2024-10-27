@@ -1,6 +1,6 @@
 # postmark
 
-an open wiki and indexing tool for books and printed works meant to engage users in identifying their interests and speedrunning their reading list
+an open wiki and indexing tool meant to help readers recall what they've read and understand texts on a conceptual basis. postmark serves to feed short-form content with spaced repetition to help readers retain ideas, themes, and important details from books, articles, and printed texts. 
 
 ## About
 
