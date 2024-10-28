@@ -2,7 +2,6 @@ import React, { Dispatch, SetStateAction, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
-import logo from "@/assets/logo.svg";
 import { siteConfig } from "@/config/site"
 
 export const SlideTabs = () => {
@@ -33,7 +32,7 @@ const TabBar = () => {
       <Link to="/">
         <Tab setPosition={setPosition}>Home</Tab>
       </Link>
-      <Link to="/changlog/">
+      <Link to="/changelog/">
         <Tab setPosition={setPosition}>Changelog</Tab>
       </Link>
       <Link to="/roadmap/">

@@ -14,7 +14,7 @@ export function Footer() {
           >
             enkyuan
           </a>
-          . The source code is available on{" "}
+          . Source code available on{" "}
           <a
             href={siteConfig.links.repo}
             target="_blank"

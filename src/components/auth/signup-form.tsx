@@ -5,6 +5,7 @@ import { Label } from "@/components/ui/label";
 import { Link } from "react-router-dom";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
+import { Card } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
 
 
@@ -15,7 +16,7 @@ const SignupForm = () => {
   };
   return (
     <div className="min-h-screen flex items-center justify-center">
-      <div className="max-w-md w-full mx-auto rounded-none md:rounded-2xl p-4 md:p-8 shadow-input bg-white dark:bg-black">
+      <Card className="max-w-md w-full mx-auto rounded-none md:rounded-2xl p-4 md:p-8 shadow-input bg-white dark:bg-black">
         <h2 className="font-bold text-xl text-neutral-800 dark:text-neutral-200">
           Welcome to Postmark 
         </h2>
@@ -67,7 +68,7 @@ const SignupForm = () => {
             </Link>
           </div>
         </form>
-      </div>
+      </Card>
     </div>
   );
 }

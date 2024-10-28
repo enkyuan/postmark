@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -12,11 +11,10 @@ import {
   SettingsIcon,
 } from "lucide-react";
 
-export default function SearchBar() {
+export function SearchBar() {
   return (
     <>
-      {/* Hero */}
-      <div className="relative overflow-hidden">
+      <div className="relative flex flex-1 items-center justify-center">
         <div className="container py-24 lg:py-32">
           <div className="text-center">
             <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">
@@ -31,13 +29,13 @@ export default function SearchBar() {
                 <div className="relative z-10 flex space-x-3 p-3 border bg-background rounded-lg shadow-lg">
                   <div className="flex-[1_0_0%]">
                     <Label htmlFor="article" className="sr-only">
-                      Search for a book. article, etc.
+                      Search for a book, article, etc.
                     </Label>
                     <Input
                       name="article"
                       className="h-full"
                       id="article"
-                      placeholder="Search article"
+                      placeholder="Search for a book, article, etc."
                     />
                   </div>
                   <div className="flex-[0_0_auto]">
@@ -47,8 +45,6 @@ export default function SearchBar() {
                   </div>
                 </div>
               </form>
-              {/* End Form */}
-              {/* SVG Element */}
               <div className="hidden md:block absolute top-0 end-0 -translate-y-12 translate-x-20">
                 <svg
                   className="w-16 h-auto text-orange-500"
@@ -78,8 +74,6 @@ export default function SearchBar() {
                   />
                 </svg>
               </div>
-              {/* End SVG Element */}
-              {/* SVG Element */}
               <div className="hidden md:block absolute bottom-0 start-0 translate-y-10 -translate-x-32">
                 <svg
                   className="w-40 h-auto text-cyan-500"
@@ -97,38 +91,10 @@ export default function SearchBar() {
                   />
                 </svg>
               </div>
-              {/* End SVG Element */}
-            </div>
-            <div className="mt-10 sm:mt-20 flex flex-wrap gap-2 justify-center">
-              <Button variant={"outline"}>
-                <BriefcaseIcon className="flex-shrink-0 w-3 h-auto mr-2" />
-                Business
-              </Button>
-              <Button variant={"outline"}>
-                <SettingsIcon className="flex-shrink-0 w-3 h-auto mr-2" />
-                Strategy
-              </Button>
-              <Button variant={"outline"}>
-                <HeartIcon className="flex-shrink-0 w-3 h-auto mr-2" />
-                Health
-              </Button>
-              <Button variant={"outline"}>
-                <LightbulbIcon className="flex-shrink-0 w-3 h-auto mr-2" />
-                Creative
-              </Button>
-              <Button variant={"outline"}>
-                <FlowerIcon className="flex-shrink-0 w-3 h-auto mr-2" />
-                Environment
-              </Button>
-              <Button variant={"outline"}>
-                <MountainSnow className="flex-shrink-0 w-3 h-auto mr-2" />
-                Adventure
-              </Button>
             </div>
           </div>
         </div>
       </div>
-      {/* End Hero */}
     </>
   );
 }
