@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
 import logo from "@/assets/logo.svg";
+import { siteConfig } from "@/config/site"
 
 export const SlideTabs = () => {
   return (
@@ -40,9 +41,6 @@ const TabBar = () => {
       </Link>
       <Link to="/auth/">
         <Tab setPosition={setPosition}>Get Started</Tab>
-      </Link>
-      <Link to="https://github.com/enkyuan/postmark">
-        <Tab setPosition={setPosition}>GitHub</Tab>
       </Link>
 
       <Cursor position={position} />
