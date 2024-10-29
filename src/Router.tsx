@@ -5,8 +5,10 @@ import Home from '@/routes/'
 import LandingLayout from '@/routes/landing/landing-layout'
 import Changelog from '@/routes/landing/changelog/'
 import Roadmap from '@/routes/landing/roadmap/'
-import Auth from '@/routes/landing/auth/'
-import SignUp from '@/routes/landing/auth/signup'
+
+import Auth from '@/routes/auth/'
+import SignUp from '@/routes/auth/signup/'
+import ResetPassword from '@/routes/auth/reset-password/'
 
 import TabLayout from '@/routes/tabs/tab-layout'
 import Archive from '@/routes/tabs/archive/'
@@ -26,7 +28,8 @@ export default function Router() {
         <Route path="/changelog/" element={<Changelog />} /> 
       </Route>
       <Route path="/auth/" element={<Auth />} />
-      <Route path="/auth/signup" element={<SignUp />} />
+      <Route path="/auth/signup/" element={<SignUp />} />
+      <Route path="/auth/reset-password/" element={<ResetPassword />} />
       <Route element={<TabLayout />}>
         <Route path="/archive/" element={<Archive />} />
         <Route path="/notes/" element={<Notes />} />

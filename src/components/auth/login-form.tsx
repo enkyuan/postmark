@@ -36,7 +36,7 @@ const LoginForm = () => {
                 <Label htmlFor="password">Password</Label>
               </div>
               <Input id="password" type="password" required />
-              <Link to="/" className="ml-auto inline-block text-sm underline">
+              <Link to="/auth/reset-password/" className="ml-auto inline-block text-sm underline">
                   Forgot your password?
               </Link>
             </div>
@@ -52,7 +52,7 @@ const LoginForm = () => {
           </div>
           <div className="mt-4 text-center text-sm">
             Don&apos;t have an account?{" "}
-            <Link to="/auth/signup" className="underline">
+            <Link to="/auth/signup/" className="underline">
               Sign up
             </Link>
           </div>

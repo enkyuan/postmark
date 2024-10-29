@@ -2,10 +2,10 @@ import { cn } from "@/lib/utils";
 import React from "react";
 import { Grid, GridItem } from "@/components/landing/grid";
 import {
-  IconClipboardCopy,
-  IconFileBroken,
+  IconCards,
   IconSignature,
-  IconTableColumn,
+  IconHighlight,
+  IconBrandOpenSource,
 } from "@tabler/icons-react";
 
 export function Bento() {
@@ -33,32 +33,31 @@ const Skeleton = () => (
 
 const items = [
   {
-    title: "The Dawn of Innovation",
-    description: "Explore the birth of groundbreaking ideas and inventions.",
+    title: "Anki-style Flashcards",
+    description: "Short-form content centered on what you've read.",
     header: <Skeleton />,
     className: "md:col-span-2",
-    icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,
+    icon: <IconCards className="h-4 w-4 text-neutral-500" />,
   },
   {
-    title: "The Digital Revolution",
-    description: "Dive into the transformative power of technology.",
-    header: <Skeleton />,
-    className: "md:col-span-1",
-    icon: <IconFileBroken className="h-4 w-4 text-neutral-500" />,
-  },
-  {
-    title: "The Art of Design",
-    description: "Discover the beauty of thoughtful and functional design.",
+    title: "Personal Annotations",
+    description: "Your own thoughts to keep you engaged.",
     header: <Skeleton />,
     className: "md:col-span-1",
     icon: <IconSignature className="h-4 w-4 text-neutral-500" />,
   },
   {
-    title: "The Power of Communication",
-    description:
-      "Understand the impact of effective communication in our lives.",
+    title: "Summaries & Highlights",
+    description: "Content for skimming through large texts.",
+    header: <Skeleton />,
+    className: "md:col-span-1",
+    icon: <IconHighlight className="h-4 w-4 text-neutral-500" />,
+  },
+  {
+    title: "Always Free & Open Source",
+    description: "Free of charge & available for self-hosting.",
     header: <Skeleton />,
     className: "md:col-span-2",
-    icon: <IconTableColumn className="h-4 w-4 text-neutral-500" />,
+    icon: <IconBrandOpenSource className="h-4 w-4 text-neutral-500" />,
   },
 ];

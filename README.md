@@ -15,3 +15,14 @@ an open wiki and indexing tool meant to help readers recall what they've read an
     <a href="https://www.postgresql.org/"><img src="https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white" /></a>
     <a href="https://vitest.dev/"><img src="https://img.shields.io/badge/-Vitest-252529?style=for-the-badge&logo=vitest&logoColor=FCC72B" /></a>
 </>
+
+## Usage
+
+```bash
+cd /path/to/your/projects
+git clone https://github.com/enkyuan/postmark.git
+cd postmark
+pnpm i
+nhost up
+pnpm run dev
+```
