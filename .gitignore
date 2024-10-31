@@ -5,6 +5,7 @@
 # Environment variables
 .env
 .env.*
+.secrets
 
 # Dependencies
 node_modules
