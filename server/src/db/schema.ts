@@ -1,6 +1,6 @@
 import { integer, pgTable, varchar, timestamp, text, boolean } from "drizzle-orm/pg-core";
 
-export const user = pgTable("user", {
+export const users = pgTable("users", {
     id: text("id").primaryKey(),
 	name: text('name').notNull(),
     email: text('email').notNull().unique(),
@@ -15,14 +15,14 @@ export const session = pgTable("session", {
     expiresAt: timestamp('expiresAt').notNull(),
     ipAddress: text('ipAddress'),
     userAgent: text('userAgent'),
-    userId: text('userId').notNull().references(()=> user.id)
+    userId: text('userId').notNull().references(()=> users.id)
 });
 
 export const account = pgTable("account", {
     id: text("id").primaryKey(),
     accountId: text('accountId').notNull(),
     providerId: text('providerId').notNull(),
-    userId: text('userId').notNull().references(()=> user.id),
+    userId: text('userId').notNull().references(()=> users.id),
     accessToken: text('accessToken'),
     refreshToken: text('refreshToken'),
     idToken: text('idToken'),
@@ -36,7 +36,6 @@ export const verification = pgTable("verification", {
     value: text('value').notNull(),
     expiresAt: timestamp('expiresAt').notNull()
 });
-
 
 export const books = pgTable('books', {
     id: text("id").primaryKey(),
