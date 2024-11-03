@@ -1,13 +1,11 @@
-# Nhost
-.nhost
-.secrets
-
 # Environment variables
 .env
 .env.*
-.secrets
 
 # Dependencies
 node_modules
+
+# Secrets
+secrets
 
 

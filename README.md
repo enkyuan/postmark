@@ -22,7 +22,7 @@ an open wiki and indexing tool meant to help readers recall what they've read an
 cd /path/to/your/projects
 git clone https://github.com/enkyuan/postmark.git
 cd postmark
+cd client
 pnpm i
-nhost up
 pnpm run dev
 ```
