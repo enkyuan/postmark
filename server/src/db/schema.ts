@@ -46,4 +46,3 @@ export const books = pgTable('books', {
     publishedAt: timestamp().notNull(),
     description: text('description').notNull(),
 });
-
