@@ -19,10 +19,26 @@ an open wiki and indexing tool meant to help readers recall what they've read an
 ## Usage
 
 ```bash
+# enter projects dir
 cd /path/to/your/projects
+
+# clone the repo
 git clone https://github.com/enkyuan/postmark.git
+
+# enter dir of repo
 cd postmark
+
+# enter frontend dir
 cd client
+
+# start dev server
 pnpm i
 pnpm run dev
+
+# enter api dir
+cd server
+
+# start dev server
+pnpm run build
+pnpm run start
 ```
