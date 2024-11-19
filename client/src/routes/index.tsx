@@ -1,5 +1,3 @@
-import React from 'react'
-
 import { Hero } from '@/components/landing/hero'
 import { Bento } from '@/components/landing/bento'
 import { Carousel } from '@/components/landing/carousel'
