@@ -1,0 +1,10 @@
+{
+  "name": "@monorepo/tsconfig",
+  "author": "Ives Furtado | @ivesfurtado",
+  "version": "0.0.0",
+  "private": true,
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  }
+}

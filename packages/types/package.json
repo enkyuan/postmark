@@ -1,0 +1,18 @@
+{
+  "name": "@monorepo/types",
+  "author": "Ives Furtado | @ivesfurtado",
+  "version": "1.0.0",
+  "keywords": [],
+  "license": "ISC",
+  "description": "",
+  "scripts": {
+    "lint": "biome lint ./src",
+    "check-types": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@monorepo/tsconfig": "workspace:*"
+  },
+  "exports": {
+    ".": "./src/index.ts"
+  }
+}

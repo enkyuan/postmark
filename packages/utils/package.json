@@ -1,0 +1,25 @@
+{
+  "name": "@monorepo/utils",
+  "author": "Ives Furtado | @ivesfurtado",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "keywords": [],
+  "license": "ISC",
+  "scripts": {
+    "check-types": "tsc --noEmit",
+    "lint": "biome lint ./src",
+    "format": "biome format ./src "
+  },
+  "dependencies": {
+    "clsx": "^2.1.1",
+    "tailwind-merge": "^2.6.0"
+  },
+  "devDependencies": {
+    "@monorepo/tsconfig": "workspace:*"
+  },
+  "exports": {
+    ".": "./src",
+    "./styles": "./src/styles.ts"
+  }
+}

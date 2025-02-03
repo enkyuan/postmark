@@ -1,0 +1,9 @@
+{
+  "extends": "@monorepo/tsconfig/express.json",
+  "compilerOptions": {
+    "outDir": "./dist"
+  },
+  "include": [
+    "src"
+  ],
+}
