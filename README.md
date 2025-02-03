@@ -4,7 +4,7 @@
 
 # postmark
 
-an open-sourced tool meant to help readers understand what they've more thoroughly. postmark serves to feed short-form content with spaced repetition to help readers retain thoughts, details, and important concepts
+an open-sourced tool intended to help readers understand what they've read more thoroughly. postmark serves to feed short-form content with spaced repetition to help readers retain thoughts, details, and important concepts
 from an assortment of written pieces. it serves to index content, genenerating summaries, anki-style flashcards, and help readers store personal annotations to ensure maximum retention and immersion.
 
 ## Features
