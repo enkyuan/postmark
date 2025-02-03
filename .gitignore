@@ -51,3 +51,6 @@ apps/*/dist
 /test-results/
 /playwright-report/
 /playwright/.cache/
+
+# vscode
+.vscode
