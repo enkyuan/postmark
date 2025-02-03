@@ -12,7 +12,9 @@ from an assortment of written pieces. it serves to index content, genenerating s
 
 ## Features
 
-- **Search**: [//]: # (TODO)
+[//]: # (TODO)
+
+- **Search**:
 
 ## Project Structure
 
