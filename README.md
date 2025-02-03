@@ -3,13 +3,6 @@
 an open-sourced tool meant to help readers understand what they've more thoroughly. postmark serves to feed short-form content with spaced repetition to help readers retain thoughts, details, and important concepts
 from an assortment of written pieces. it serves to index content, genenerating summaries, anki-style flashcards, and help readers store personal annotations to ensure maximum retention and immersion.
 
-## Built with
-
-- **Next.js**: Provides the frontend framework with server-side rendering, API routes, and static generation.
-- **Express.js**: Handles the backend, including API endpoints and server logic.
-- **Turbopack**: Ensures fast builds and optimal performance for this monorepo.
-- **Tailwind CSS**: Simplifies styling with a utility-first approach.
-
 ## Features
 
 [//]: # (TODO)
@@ -45,8 +38,8 @@ The monorepo is organized as follows:
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/ivesfurtado/next-express-biome-turborepo.git
-   cd next-express-biome-turborepo
+   git clone https://github.com/enkyuan/postmark.git
+   cd postmark
    ```
 
 2. **Install Dependencies**
