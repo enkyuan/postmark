@@ -1,3 +1,7 @@
+<p id="logo" align="start">
+  <img src="https://github.com/enkyuan/postmark/blob/main/apps/web/public/postmark.svg" width="256">
+</>
+
 # postmark
 
 an open-sourced tool meant to help readers understand what they've more thoroughly. postmark serves to feed short-form content with spaced repetition to help readers retain thoughts, details, and important concepts
