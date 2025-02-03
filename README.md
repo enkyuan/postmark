@@ -5,9 +5,7 @@ from an assortment of written pieces. it serves to index content, genenerating s
 
 ## Features
 
-[//]: # (TODO)
-
-- **Search**:
+  > TODO
 
 ## Project Structure
 
