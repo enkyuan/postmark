@@ -1,7 +1,10 @@
 import * as http from "node:http";
 import app from "./app";
+import dotenv from "dotenv";
 
-const port = 3001;
+dotenv.config();
+
+const port = Number(process.env.PORT);
 
 const init = async (): Promise<void> => {
   const server = http.createServer(app);

@@ -13,16 +13,20 @@
   },
   "dependencies": {
     "@monorepo/types": "workspace:*",
+    "@xata.io/client": "0.0.0-next.va121e4207b94bfe0a3c025fc00b247b923880930",
+    "better-auth": "^1.1.15",
     "cors": "2.8.5",
     "dotenv": "^16.4.7",
     "express": "^5.0.1",
     "morgan": "^1.10.0",
+    "pg": "^8.13.1",
     "ts-node-dev": "^2.0.0"
   },
   "devDependencies": {
     "@monorepo/tsconfig": "workspace:*",
     "@types/cors": "2.8.17",
     "@types/express": "^5.0.0",
-    "@types/morgan": "^1.9.9"
+    "@types/morgan": "^1.9.9",
+    "@types/pg": "^8.11.11"
   }
 }

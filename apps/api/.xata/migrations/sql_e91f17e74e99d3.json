@@ -1,0 +1,18 @@
+{
+  "done": true,
+  "migration": {
+    "name": "sql_e91f17e74e99d3",
+    "operations": [
+      {
+        "sql": {
+          "up": "CREATE TABLE verification (id text NOT NULL PRIMARY KEY, identifier text NOT NULL, value text NOT NULL, \"expiresAt\" timestamp NOT NULL, \"createdAt\" timestamp, \"updatedAt\" timestamp)"
+        }
+      }
+    ]
+  },
+  "migrationType": "inferred",
+  "name": "sql_e91f17e74e99d3",
+  "parent": "sql_7d1a35729af0c7",
+  "schema": "public",
+  "startedAt": "2025-02-04T01:44:09.524991Z"
+}

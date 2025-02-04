@@ -1,12 +1,12 @@
 "use client";
 
-import type { GetTestResponse } from "@monorepo/types";
+import type { GetStatusResponse } from "@monorepo/types";
+import { Icon } from "@iconify/react";
 import { Card, CardContent, CardHeader } from "@monorepo/ui/components/card";
 import { cn } from "@monorepo/utils/styles";
-import { Loader2 } from "lucide-react";
 import { useEffect, useState } from "react";
 
-const GetTest = () => {
+const GetStatus = () => {
   const [test, setTest] = useState<string>("");
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -14,9 +14,9 @@ const GetTest = () => {
   useEffect(() => {
     const fetchTest = async () => {
       try {
-        const response = await fetch("http://localhost:3001/test");
+        const response = await fetch("http://localhost:3001/status");
         if (!response.ok) throw new Error("Failed to fetch data");
-        const data: GetTestResponse = await response.json();
+        const data: GetStatusResponse = await response.json();
         setTimeout(() => {
           setTest(data.message);
           setLoading(false);
@@ -40,14 +40,17 @@ const GetTest = () => {
             error && "text-red-500"
           )}
         >
-          API Status
+          API
         </h3>
       </CardHeader>
       <CardContent>
         {loading ? (
           <div className="flex items-center gap-2 text-muted-foreground">
-            <Loader2 className="w-4 h-4 animate-spin" />
-            Testing API connection...
+            <Icon
+              icon="svg-spinners:bars-rotate-fade"
+              className="w-4 h-4 animate-spin"
+            />
+            Testing connection...
           </div>
         ) : error ? (
           <p className="text-red-500">{error}</p>
@@ -59,4 +62,4 @@ const GetTest = () => {
   );
 };
 
-export default GetTest;
+export default GetStatus;
