@@ -19,6 +19,7 @@ apps/*/node_modules
 # misc
 .DS_Store
 *.pem
+.xata/*
 
 # debug
 .pnpm-debug.log*
