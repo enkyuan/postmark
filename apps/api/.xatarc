@@ -1,6 +1,0 @@
-{
-  "databaseURL": "https://RON-N-s-workspace-p6jarl.us-east-1.xata.sh/db/postmark_psql",
-  "codegen": {
-    "output": "src/lib/xata.ts"
-  }
-}
