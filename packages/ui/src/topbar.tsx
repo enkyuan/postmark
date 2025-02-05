@@ -1,12 +1,14 @@
+// TODO: add noisy effect to animated cursor
+
 "use client";
 
 import React, { Dispatch, SetStateAction, useRef, useState } from "react";
-import Link from "next/link";
 import { motion } from "motion/react";
+import Link from "next/link";
 
-export const TabBar = () => {
+export const TopBar = () => {
   return (
-    <div className="sticky py-4">
+    <div className="py-4">
       <TabContainer />
     </div>
   );
@@ -27,18 +29,18 @@ const TabContainer = () => {
           opacity: 0,
         }));
       }}
-      className="relative mx-auto flex w-fit rounded-full border-2 border-black bg-black p-1"
+      className="relative mx-auto flex w-fit rounded-full border-2 bg-transparent bg-clip-padding border-transparent backdrop-filter backdrop-blur-md bg-opacity-8 p-1"
     >
       <Link href="/">
         <Tab setPosition={setPosition}>Home</Tab>
       </Link>
-      <Link href="/changelog/">
-        <Tab setPosition={setPosition}>Changelog</Tab>
+      <Link href="/status">
+        <Tab setPosition={setPosition}>Status</Tab>
       </Link>
-      <Link href="/roadmap/">
+      <Link href="/roadmap">
         <Tab setPosition={setPosition}>Roadmap</Tab>
       </Link>
-      <Link href="/auth/">
+      <Link href="/auth">
         <Tab setPosition={setPosition}>Get Started</Tab>
       </Link>
 
@@ -70,7 +72,7 @@ const Tab = ({
           opacity: 1,
         });
       }}
-      className="relative z-10 block cursor-pointer px-3 py-1.5 text-xs uppercase text-white md:px-5 md:py-3 md:text-base"
+      className="relative z-10 block cursor-pointer px-3 py-1.5 text-xs uppercase text-secondary md:px-5 md:py-3 md:text-base"
     >
       {children}
     </li>
@@ -83,7 +85,7 @@ const Cursor = ({ position }: { position: Position }) => {
       animate={{
         ...position,
       }}
-      className="absolute z-0 h-7 rounded-full bg-current md:h-12"
+      className="absolute z-0 h-7 rounded-full bg-accent md:h-12"
     />
   );
 };

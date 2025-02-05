@@ -1,9 +1,8 @@
 "use client";
 
 import React, { ReactNode } from "react";
-import { Outlet } from "react-router-dom";
 
-import { TabBar } from "@monorepo/ui/components/tab-bar";
+import { TopBar } from "@monorepo/ui/components/topbar";
 import { Footer } from "@monorepo/ui/components/footer";
 
 const LandingLayout = ({
@@ -13,7 +12,9 @@ const LandingLayout = ({
 }>) => {
   return (
     <>
-      <TabBar />
+      <header className="sticky overflow-hidde top-0 z-20">
+        <TopBar />
+      </header>
       {children}
       <Footer />
     </>
